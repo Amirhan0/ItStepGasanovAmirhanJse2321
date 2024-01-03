@@ -1,0 +1,111 @@
+@keyframes minutes {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes second {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes has {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.main {
+    border-radius: 50%;
+    border: solid 5px rgb(37, 109, 81);
+    width: 100px;
+    height: 100px;
+    margin: 3em;
+    z-index: 1;
+    position: relative;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: rgb(37, 109, 81);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 42px;
+    top: 44px;
+    z-index: 2;
+}
+
+.minutes {
+    width: 2px;
+    height: 31px;
+    background-color: rgb(37, 109, 81);
+    position: absolute;
+    z-index: 2;
+    left: 50px;
+    top: 20px;
+    animation: minutes 1600s infinite steps(1600);
+}
+
+.seconds {
+    width: 1px;
+    height: 45px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(37, 109, 81);
+    left: 50px;
+    top: 2px;
+    animation: second 60s infinite steps(60);
+    transform-origin: 0 45px;
+}
+
+.has {
+    width: 3px;
+    height: 28px;
+    background-color: rgb(37, 109, 81);
+    position: absolute;
+    z-index: 2;
+    left: 47px;
+    top: 50px;
+    animation: has 43200s infinite steps(43200);
+    transform-origin: 0 29px;
+}
+
+.twelve {
+    color: rgb(34, 0, 155);
+    left: 41px;
+    top: 3px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.three {
+    color: rgb(34, 0, 155);
+    position: absolute;
+    left: 85px;
+    top: 40px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.six {
+    color: rgb(34, 0, 155);
+    position: absolute;
+    font-weight: bold;
+    font-size: 17px;
+    left: 45px;
+    top: 80px;
+}
+
+.nine {
+    color: rgb(34, 0, 155);
+    position: absolute;
+    font-weight: bold;
+    font-size: 17px;
+    left: 5px;
+    top: 43px;
+}

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@400;600&family=Oswald&family=Roboto+Slab&family=Tinos:wght@700&family=Vina+Sans&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@400;600&family=Oswald&family=Roboto+Slab&family=Tinos:wght@700&family=Vina+Sans&family=Work+Sans:wght@300;400;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logotip {
+    display: flex;
+    height: 46px;
+    width: 46px;
+    align-items: center;
+    margin-left: 43px;
+}
+
+span {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+
+body {
+    background: url(room.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+ul,
+li {
+    display: flex;
+    list-style-type: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 68px;
+    margin-top: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.shop_box {
+    display: flex;
+    height: 25px;
+
+}
+
+.shop {
+    display: flex;
+    height: 35px;
+    width: 32px;
+    height: 36.571px;
+    border: none;
+    position: relative;
+}
+
+.gradient_1 {
+    display: flex;
+    position: relative;
+    left: -15px;
+    width: 21px;
+    height: 21px;
+}
+
+.text-1 {
+    display: flex;
+    position: relative;
+    left: -30px;
+    color: #2D3949;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    bottom: -2px;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 91px;
+}
+
+.subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 24px;
+}
+
+input:placeholder-shown {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input {
+    display: flex;
+    width: 463px;
+    padding: 24px 30px;
+    align-items: flex-start;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    margin-left: 600px;
+    margin-top: 42px;
+}
+
+.gradient_2 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    left: 234px;
+    bottom: 60px;
+}
+
+.search_box {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    width: 28.07px;
+    height: 28.07px;
+    display: flex;
+    position: relative;
+    left: 195px;
+    bottom: 50px;
+}
+
+.navs ul,
+li:hover {
+    cursor: pointer;
+    background: var(--gradient2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.point-3 {
+    display: flex;
+    justify-content: flex-end
+}
+
+.point-1,
+.point-2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.point-product-1 {
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    left: 190px;
+}
+
+.point-product-2 {
+    display: flex;
+    position: relative;
+    bottom: 345px;
+    left: 105px;
+    width: 54px;
+    height: 54px;
+}
+
+.point-product-3 {
+    display: flex;
+    position: relative;
+    width: 205px;
+    height: 115.744px;
+    bottom: 300px;
+    left: 10px;
+}
+
+.point-product-4 {
+    display: flex;
+    position: relative;
+    width: 54px;
+    height: 54px;
+    bottom: 170px;
+    right: 125px;
+}

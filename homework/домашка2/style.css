@@ -1,0 +1,38 @@
+.text-center {
+    text-align: center;
+}
+
+.text-down {
+    font-weight: 599;
+
+}
+
+.text-scene {
+    font-weight: 599;
+}
+
+.text-html {
+    text-align: center;
+}
+
+.text-html2 {
+    text-align: center;
+}
+
+.html {
+    border-bottom: 1px dotted black;
+}
+
+span.red {
+    color: red;
+    background-color: antiquewhite;
+}
+
+.markup {
+    text-align: center;
+}
+
+pre {
+    font-size: 0.7rem;
+  margin: 0;
+}

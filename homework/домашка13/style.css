@@ -1,0 +1,111 @@
+.main {
+    height: 300px;
+    width: 500px;
+    background-color: rgb(143, 211, 188);
+    border-radius: 5%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.img {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    bottom: 260px;
+    left: 270px;
+}
+
+.font {
+    background-color: tomato;
+    height: 30px;
+    width: 400px;
+    position: relative;
+    z-index: 2;
+    border-radius: 2%;
+   right: 15px;
+    top: 50px;
+}
+
+span {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    position: absolute;
+    bottom: 7px;
+    left: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: inherit;
+}
+
+.password {
+    width: 60px;
+    height: 20px;
+    position: relative;
+    left: 180px;
+    bottom: 60px;
+}
+
+.number {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    left: 15px;
+    top: 35px;
+}
+
+p {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cvv {
+    position: relative;
+    left: 180px;
+    bottom: 55px;
+}
+
+.num {
+    width: 60px;
+    height: 20px;
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+
+.data {
+    width: 60px;
+    height: 20px;
+    position: relative;
+    left: 25px;
+    top: 20px;
+}
+
+.expiry {
+    position: relative;
+    left: 15px;
+    top: 25px;
+}
+
+.text {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    left: 15px;
+    top: 25px;
+}
+
+.card {
+    position: relative;
+    left: 15px;
+    top: 35px;
+}
+
+.subtitle {
+    position: relative;
+    top: 45px;
+    left: 15px;
+
+}

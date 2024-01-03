@@ -1,0 +1,793 @@
+@import url(https://fonts.googleapis.com/css?family=Risque:regular);
+@import url(https://fonts.googleapis.com/css?family=Risque:regular);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Marcellus+SC&family=Merriweather&family=Odibee+Sans&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Oswald&family=Poppins:ital,wght@0,200;0,400;1,200;1,300&family=Prompt&family=Roboto+Slab&family=Roboto:ital@1&family=Tinos:wght@700&family=Vina+Sans&family=Work+Sans:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Marcellus+SC&family=Merriweather&family=Odibee+Sans&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Oswald&family=Poppins:ital,wght@0,200;0,400;1,200;1,300&family=Prompt&family=Red+Hat+Text&family=Roboto+Slab&family=Roboto:ital@1&family=Tinos:wght@700&family=Vina+Sans&family=Work+Sans:wght@300;400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back {
+    background-color: blue;
+    display: flex;
+
+}
+
+.side__bar {
+    background: #FFF;
+    flex: 0 0 200px;
+}
+
+.main__block {
+    flex: 1 1 auto;
+    background: #F9F9F9;
+}
+
+/* Начало бургера */
+
+
+.burger a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.burger a span,
+.burger a span::before,
+.burger a span::after {
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -10px;
+    border-radius: 20px;
+}
+
+.burger a span::before,
+.burger a span::after {
+    content: '';
+    transition: .2s;
+}
+
+.burger a span::before {
+    transform: translateY(-5px);
+}
+
+.burger a span::after {
+    transform: translateY(5px);
+}
+
+.burger .active span::before {
+    transform: rotate(-45deg);
+    /* transform-origin: left bottom; */
+    /* width: 10px; */
+}
+
+.burger .active span::after {
+    transform: rotate(45deg);
+    /* transform-origin: left top; */
+    /* width: 10px; */
+}
+
+.burger .active span {
+    height: 0;
+}
+
+/* Конец бургера */
+
+.side__bar {
+    /* min-height: 100vh; */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.back__img {
+    border-radius: 5px;
+    background: linear-gradient(180deg, #314ED8 0%, rgba(213, 49, 216, 0.61) 100%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.back__img img {
+    width: 20px;
+    height: 20px;
+}
+
+.logo__and__text {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo__and__text span {
+    color: #111;
+    font-family: Risque;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.side__bar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    margin-top: 20px;
+
+}
+
+.side__bar ul li {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.side__bar ul li img {
+    margin-right: 10px;
+}
+
+.side__bar ul li span {
+    color: #7A7A7A;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.side__bottom__back {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.side__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 21px;
+    background: linear-gradient(180deg, #4D64E1 0%, #9956F4 100%);
+    padding: 31px;
+    font-family: Poppins;
+    margin-top: 100%;
+}
+
+.side__bottom span {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.side__bottom button {
+    margin-top: 23px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #FFF;
+
+    padding: 10px 20px 8px;
+}
+
+.side__bottom button span {
+    color: black;
+    margin-left: 5px;
+}
+
+.top__bar {
+    width: 100%;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    border-radius: 50px;
+    background: #F9F9F9;
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    background: transparent;
+    border: none;
+    height: 100%;
+    margin-left: 33px;
+    font-size: 20px;
+}
+
+.search input:focus {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.search input::placeholder {
+    color: #BDBDBD;
+
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #E9EBFF;
+}
+
+.icon div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45px;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.circle1 {
+    background-color: #4D64E1;
+}
+
+.circle2 {
+    background-color: #9956F4;
+}
+
+.circle3 {
+    background-color: #C4C4C4;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 220px;
+    height: 60px;
+    background-color: #4D64E1;
+    border-radius: 10px;
+    margin-right: 30px;
+    color: white;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.order__data {
+    font-family: Poppins;
+}
+
+.order__data h2 {
+    color: #111;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 13px;
+}
+
+.order__data p span {
+    color: #6C63FF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.order__data p {
+    color: #7A7A7A;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.order button {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background: #F9FAFE;
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.25);
+    padding: 20px 30px 10px 30px;
+}
+
+.order button img {
+    margin-right: 15px;
+}
+
+.main__nav__bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5%;
+
+
+}
+
+.main__nav__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__nav__title img {
+    width: 115px;
+    height: 115px;
+
+}
+
+.zara {
+    margin-left: 19%;
+}
+
+
+
+.main__nav__title #zara {
+    color: #111;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
+.main__nav__title #customer {
+    color: #7A7A7A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-left: 25%;
+    margin-top: 3px;
+}
+
+
+.main__nav__one {
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    width: 295px;
+    height: 232px;
+    flex-shrink: 0;
+    background-color: #404A56;
+
+    margin-top: 10%;
+
+
+}
+
+.main__nav__one #order {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.main__nav__one p {
+    color: #D8D8D8;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.main__nav__two {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 295px;
+    height: 84px;
+    flex-shrink: 0;
+
+    margin-top: 11%;
+
+    background-color: #4E60FF;
+}
+
+.main__nav__two #circle_white {
+    width: 69px;
+    height: 69px;
+    flex-shrink: 0;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding-top: 1%;
+
+    position: relative;
+}
+
+.main__nav__two .delivery {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+
+    position: relative;
+    right: 55px;
+    top: 25px;
+}
+
+.main__nav__two p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-left: -25px;
+}
+
+.main__nav__subtitle {
+    width: 295px;
+    height: 407px;
+    flex-shrink: 0;
+
+    margin-top: 6%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.main_subtitle {
+    display: flex;
+    flex-direction: column;
+}
+
+#order {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-left: 2%;
+}
+
+.text_1 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text_2 {
+    color: #7A7A7A;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_subtitle_text {
+    margin-left: 10%;
+
+    position: relative;
+}
+
+.main_subtitle_text img {
+    position: relative;
+
+}
+
+.main_subtitle_text .ellipse1 {
+    right: 25px;
+    bottom: 250px;
+}
+
+.main_subtitle_text .rectangle1 {
+    right: 37px;
+    bottom: 200px;
+}
+
+.main_subtitle_text .ellipse2 {
+    right: 49px;
+    bottom: 195px;
+}
+
+.main_subtitle_text .rectangle2 {
+    width: 2px;
+    height: 57px;
+    flex-shrink: 0;
+
+    right: 61px;
+    bottom: 140px;
+}
+
+.main_subtitle_text .ellipse3 {
+    right: 73px;
+    bottom: 140px;
+}
+
+.main_subtitle_text .rectangle3 {
+    width: 2px;
+    height: 57px;
+    flex-shrink: 0;
+
+    right: 85px;
+    bottom: 90px;
+}
+
+.main_subtitle_text .ellipse4 {
+    right: 97px;
+    bottom: 80px;
+}
+
+.items {
+    width: 794px;
+    height: 396px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+
+.title_block {
+    display: flex;
+}
+
+#item {
+    margin-right: 55%;
+    margin-left: 5%;
+}
+
+#qty {
+    margin-right: 5%;
+}
+
+#price {
+    margin-right: 5%;
+}
+
+.items_main hr {
+    width: 794px;
+    height: 2px;
+    flex-shrink: 0;
+
+    background: #E1E1E1;
+    margin-top: 1%;
+}
+
+.items_main span {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 40px;
+}
+
+.items__card__main {
+    display: flex;
+    margin-top: 30px;
+}
+
+.items__card__subtitle {
+    display: flex;
+    position: relative;
+}
+
+.main_course {
+    color: #2F80ED;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-left: 20px;
+}
+
+.name_card {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+
+    position: relative;
+    right: 63px;
+
+}
+
+.star {
+    position: relative;
+    top: 25px;
+    right: 295px;
+}
+
+.reviews {
+    color: #A7A7A7;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    position: relative;
+    top: 50px;
+    right: 285px;
+}
+
+.price {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 23px;
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.price2 {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+.price3 {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.map {
+    margin-top: 50px;
+}
+
+.delivery_boy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery_boy__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 20px;
+}
+
+.delivery_boy__title {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery_boy__main img {
+    width: 150px;
+    height: 150px;
+}
+
+.delivery_boy__main span {
+    color: var(--Grey, #061737);
+    font-family: Open Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+
+    
+}
+
+.delivery_boy__main p {
+    color: var(--Grey-variant, #898EBC);
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+

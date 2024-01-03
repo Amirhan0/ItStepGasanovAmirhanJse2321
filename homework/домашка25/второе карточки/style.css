@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.cards {
+    display: flex;
+   margin-top: 25vh;
+   margin-left: 55vh;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    width: 150px;
+    height: 200px;
+    background-color: rgb(163, 161, 157);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    width: 150px;
+    height: 200px;
+    background-color: rgb(163, 161, 157);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    width: 150px;
+    height: 200px;
+    background-color: rgb(163, 161, 157);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card4 {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    background-color: rgb(163, 161, 157);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card1 h1,h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card1 p {
+    text-align: center;
+}
+
+.card1 button {
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: yellow;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card1 hr {
+    background-color: yellow;
+    height: 2px;
+    margin-top: 2px;
+    border-style: none;
+}
+
+.card2 h1,h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card2 p {
+    text-align: center;
+}
+
+.card2 button {
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: orange;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card2 hr {
+    background-color: orange;
+    height: 2px;
+    margin-top: 2px;
+    border-style: none;
+}
+
+.card3 h1,h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card3 p {
+    text-align: center;
+}
+
+.card3 button {
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: navy;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card3 hr {
+    background-color: navy;
+    height: 2px;
+    margin-top: 2px;
+    border-style: none;
+}
+
+.card4 h1,h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.card4 p {
+    text-align: center;
+}
+
+.card4 button {
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: red;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card4 hr {
+    background-color: red;
+    height: 2px;
+    margin-top: 2px;
+    border-style: none;
+}
+
+.card1:hover {
+    transform: scale(1.2);
+}
+
+.card2:hover {
+    transform: scale(1.2);
+}
+.card3:hover {
+    transform: scale(1.2);
+}
+.card4:hover {
+    transform: scale(1.2);
+}

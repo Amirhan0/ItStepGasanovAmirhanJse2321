@@ -1,0 +1,212 @@
+.main {
+    width: 1200px;
+    border: solid 1px black;
+    margin: auto;
+    background-color: dimgrey;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.spisok {
+    display: inline;
+    margin-right: 25px;
+}
+
+span {
+    font-size: 30pt;
+}
+
+.header-2 {
+   display: flex;
+   justify-content: space-around;
+}
+.banner{
+    background-color: rgb(83, 83, 83);
+    width: 450px;
+    height: 200px; 
+}
+h1 {
+    margin-top: 30px;
+}
+
+p{ 
+    text-align: start;        
+}
+
+
+.subtitle {
+    font-size: 30px;
+}
+
+.feature {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin-left: 25px;
+}
+
+.gorizontal_menu {
+    display: flex;
+    justify-content: end;
+    width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page {
+    width: 1200px;
+    border: solid 1px black;
+    margin: auto;
+    background-color: rgb(140, 140, 140);
+    justify-content: space-around;
+}
+
+.Services-1 {
+   width: 200px;
+   height: 200px;
+   background-color: #965858;
+   margin-left: 35px;
+   margin-top: 35px;
+   display: flex;
+}
+
+.serv1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    padding-top: 75px;
+}
+
+.Services-2 {
+    width: 200px;
+   height: 200px;
+   background-color: #965858;
+   margin-left: 35px;
+   margin-top: 35px;
+   display: flex;
+}
+
+.serv2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    padding-top: 75px;
+}
+
+.Services-3 {
+    width: 200px;
+    height: 200px;
+    background-color: #965858;
+    margin-left: 35px;
+    margin-top: 35px;
+    display: flex;
+}
+
+.serv3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    padding-top: 75px;
+    align-items: center;
+}
+
+.Services {
+    justify-content: space-around;
+    display: flex;
+}
+
+.recent-title {
+    justify-content: space-around;
+    display: flex;
+}
+
+.rw-1 {
+    width: 200px;
+    height: 200px;
+    background-color: #965858;
+    margin-left: 35px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.rw-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #965858;
+    margin-left: 35px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.rw-3 {
+    width: 200px;
+    height: 200px;
+    background-color: #965858;
+    margin-left: 35px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.Twitter-title {
+    justify-content: center;
+    display: flex;
+    width: 400px;
+    height: 300px;
+}
+
+.twitter {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding-top: 30px;
+    background-color: #965858;
+    width: 680px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 280px;
+    margin-bottom: 25px;
+}
+
+.footer {
+     width: 1200px;
+    border: solid 1px black;
+    margin: auto;
+    background-color: dimgrey;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+ul, li {
+    margin-left: 5px;
+display: inline;
+}
+
+.copy {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+

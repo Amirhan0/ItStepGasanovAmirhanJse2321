@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "AVENGEANCE HEROIC AVENGER AT";
+    src: url("AVENGEANCE\ HEROIC\ AVENGER\ AT.ttf");
+}
+
+
+body {
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 100%;
+}
+
+div {
+    display: flex;
+}
+
+.hulk-main {
+    display: inline;
+}
+
+.hulk {
+    position: absolute;
+    height: 800px;
+    top: 450px;
+    z-index: 3;
+    left: 250px;
+}
+
+.cap-main {
+    display: inline;
+}
+
+.cap {
+    width: 350px;
+    position: absolute;
+    height: 700px;
+    z-index: 6;
+    top: 500px;
+    left: 700px;
+}
+
+.iron-main {
+    display: inline;
+}
+
+.ironman {
+    position: absolute;
+    height: 1000px;
+    z-index: 7;
+    top: 400px;
+    right: 650px;
+}
+
+.thor-main {
+    display: inline;
+}
+
+.thor {
+    position: absolute;
+    height: 750px;
+    right: 150px;
+    top: 500px;
+}
+
+.hawkeye-main {
+    display: inline;
+}
+
+.hawkeye {
+    width: 350px;
+    position: absolute;
+    height: 700px;
+    top: 500px;
+    right: 550px;
+}
+
+
+.widow {
+    position: absolute;
+    height: 750px;
+    right: 1000px;
+    top: 500px;
+    z-index: 4;
+}
+
+span {
+    color: black;
+    font-size: 200px;
+    text-align: center;
+    position: absolute;
+    left: 700px;
+    top: 250px;
+    font-family: "AVENGEANCE HEROIC AVENGER AT";
+}
