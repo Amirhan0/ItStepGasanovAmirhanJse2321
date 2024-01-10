@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.corobka {
+    padding: 30px 20%;
+
+}
+
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav {
+    width: 450px;
+    color: var(--, #2F3035);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.logo {
+    position: relative;
+}
+
+.lspeed {
+    position: absolute;
+    left: 13px;
+    top: -30px;
+}
+
+.strspeed {
+    position: absolute;
+    left: 32px;
+    top: -23px;
+}
+
+.rspeed {
+    position: absolute;
+    left: 50px;
+    top: -16px;
+}
+
+.logo_txt {
+    margin-right: 48px;
+}
+
+.logo_txt span {
+    position: absolute;
+    top: 60px;
+    color: var(--, #2F3035);
+    font-family: Staatliches;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.adres {
+    color: var(--, #2F3035);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+
+}
+
+.adres img {
+    position: relative;
+    top: -5px;
+}
+
+.righttop img {
+    margin-right: 10px;
+}
+
+.righttop {
+    position: relative;
+    left: -10px;
+}
+
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1C62CD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    top: 10px;
+    right: -5px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #F0F0F4;
+    height: 53px;
+    margin-top: 50px;
+}
+
+.category {
+    color: var(--, #2F3035);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category:hover {
+    font-weight: 600;
+    border-bottom: #1C62CD 3px solid;
+}
+
+.promotions {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.topsearch {
+    display: flex;
+}
+
+.topsearch div {
+    padding: 26px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    color: var(--, #2F3035);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 5px;
+}
+
+.topsearch div:hover {
+    background-color: #F0F0F4;
+    color: var(--, #2F3035);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bottomsearch {
+    height: 50px;
+    display: flex;
+    position: relative;
+}
+
+.inpsearch {
+    background-color: #F0F0F4;
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.inpsearch input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+.inpsearch input ::placeholder {
+    color: #656464;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.submit {
+    width: 145px;
+    height: 50px;
+    background-color: #1C62CD;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 1000px;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    border: 1px solid #CDCDCD;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 20px 0px rgba(50, 50, 50, 0.25);
+    border: none;
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.card:hover h2 {
+    color: #1C62CD;
+    transition: 0.5s;
+}
+
+.card h2 {
+    color: var(--, #2F3035);
+    font-family: 'Barlow', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cardleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.podr span {
+    color: #C4C4C4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.kategorii {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 362px);
+    grid-template-rows: repeat(2, 129px);
+    gap: 30px;
+}
+
+.kartinka {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dvigatel {
+    margin-right: 60px;
+}
+
+.populartovars {
+    margin-top: 80px;
+}
+
+.toppop h2 {
+    margin-bottom: 25px;
+    color: var(--, #2F3035);
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.categpop {
+    display: grid;
+    width: 55%;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 60px;
+}
+
+.categ {
+    color: var(--, #2F3035);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.categ:hover {
+    border-bottom: #1C62CD 3px solid;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.sliderpop {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 264px);
+    gap: 30px;
+}
+
+.cardpop {
+    height: 403px;
+    border-radius: 3px;
+    border: 1px solid #CDCDCD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 23px;
+}
+
+
+.heart {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 225px;
+    top: 15px;
+
+}
+
+.cardpop h3 {
+    color: var(--, #2F3035);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cardpop h2 {
+    margin-top: 15px;
+    color: var(--, #2F3035);
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cartr {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    background-color: #1C62CD;
+    border-radius: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 203px;
+    bottom: 0px;
+}
+
+.cartr img {
+    color: white;
+}
+
+.cardpop {
+    position: relative;
+}
+
+.cardpop:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cardpop a {
+    color: #1C62CD;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.cardpop h4 {
+    margin-top: 15px;
+    color: #2F3035;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sale {
+    padding-top: 4px;
+    padding-left: 15px;
+    display: flex;
+    text-align: center;
+
+    right: 200px;
+    bottom: 377px;
+    position: absolute;
+    background-color: #1C62CD;
+    width: 63px;
+    height: 25px;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: 'Barlow', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.84px;
+}
+
+
+.populartovars button {
+    cursor: pointer;
+    margin: 35px 470px;
+    width: 252px;
+    height: 50px;
+    flex-shrink: 0;
+    border: none;
+    background-color: #F0F0F4;
+    color: var(--, #2F3035);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+
+.discounts {
+    height: 165px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1C62CD;
+}
+
+.discounts_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discounts_text h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 100% */
+}
+
+.discounts_button button {
+    border: none;
+    color: #2F3035;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 208.333% */
+    width: 284px;
+    height: 57px;
+    flex-shrink: 0;
+    background: #FFF;
+
+    cursor: pointer;
+}
+
+.discounts_button {
+    display: flex;
+    align-items: center;
+}
+
+.discounts_images {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+
+.cards {
+    margin-top: 80px;
+}
+
+
+footer {
+    margin-top: 80px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #C4C4C4;
+}
+
+.information {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    position: relative;
+}
+
+.information_text {
+    margin-bottom: 25px;
+}
+
+.company {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.company span {
+    margin-bottom: 7px;
+    color: #2F3035;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#okom {
+    color: #2F3035;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.internet-shop {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+}
+
+
+.internet-shop span {
+    margin-bottom: 7px;
+    color: #2F3035;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.social_media {
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(4, 50px);
+}
+
+
+.internet-shop a {
+    margin-top: 25px;
+    color: #48494D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.company a {
+    margin-top: 25px;
+    color: #48494D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.searchfot {
+    background-color: #F0F0F4;
+    width: 201px;
+    height: 33px;
+    flex-shrink: 0;
+    display: flex;
+    padding-left: 20px;
+}
+
+.searchfot input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+.searchfot input ::placeholder {
+    color: #656464;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.submit2 {
+    width: 109px;
+    height: 33px;
+    flex-shrink: 0;
+    background-color: #1C62CD;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+
+    left: 200px;
+    bottom: -1px;
+
+
+}
+
+.information_text {
+    color: #2F3035;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
