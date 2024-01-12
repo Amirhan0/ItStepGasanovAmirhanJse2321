@@ -1,0 +1,1052 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.932);
+}
+
+.pre-header {
+    background-color: black;
+    clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 70%, 100% 100%, 3% 100%, 2% 100%)
+}
+
+.pre-header i {
+    color: white;
+    margin-right: 5px;
+}
+
+.pre-header p {
+    color: white;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.pre-header .p22 {
+    color: gray;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.pre-header .right-section {
+    margin-left: 100px;
+}
+
+.pre-header li {
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.pre-header li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.pre-header ul li a::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    background-image: url('../images/lines2.jpg');
+    width: 15px;
+    height: 11px;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+
+.fa {
+    font-size: 20px;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+
+.header img {
+    padding-top: 20px;
+}
+
+.header li {
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.header li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(107, 105, 105, 0.842);
+    margin-left: 10px;
+}
+
+.header ul li a::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    background-image: url('../images/lines1.jpg');
+    width: 15px;
+    height: 11px;
+}
+
+.header button {
+    background-color: rgb(89, 0, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border: 1px solid rgb(89, 0, 255);
+    transition: 0.3s;
+    clip-path: polygon(100% 0, 100% 83%, 93% 100%, 0 100%, 0 0);
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+
+.header button:hover {
+    background-color: transparent;
+    color: rgb(89, 0, 255);
+}
+
+.hero-section {
+    padding-top: 70px;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    padding-bottom: 420px;
+    background-position: center;
+}
+
+.hero-section h1 {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.hero-section p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.hero-section .hero-inner {
+    height: 100%;
+    padding-top: 50px;
+    position: relative;
+}
+
+.hero-section .hero-inner .hero-content {
+    position: absolute;
+    left: 5px;
+}
+
+.hero-section .hero-inner .hero-content::before {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+}
+
+.dis-btn {
+    background-color: rgb(89, 0, 255);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    clip-path: polygon(100% 0, 100% 83%, 93% 100%, 0 100%, 0 0);
+}
+
+.dis-btn:hover {
+    background-color: transparent;
+    color: rgb(89, 0, 255);
+}
+
+.ourservices-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.ourservices-section h5 {
+    padding-bottom: 10px;
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+.ourservices-section h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ourservices-section p {
+    padding-bottom: 30px;
+    color: rgb(116, 111, 111);
+}
+
+.servicebox-section {
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.servicebox-section .box {
+    background-color: rgb(39, 36, 36);
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.servicebox-section .box:hover {
+    background: linear-gradient(0.25turn, #17023d, #5a0892, #2058a7);
+    cursor: pointer;
+    margin-top: -20px;
+    -webkit-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.servicebox-section .box h3 {
+    text-transform: uppercase;
+}
+
+.servicebox-section .box p {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    color: rgb(196, 187, 187);
+}
+
+.info-and-plans {
+    background-color: transparent;
+    padding: 8px;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+    border: solid 1px white;
+}
+
+.info-and-plans:hover {
+    background-color: transparent;
+    color: rgb(89, 0, 255);
+}
+
+.how-it-works-section {
+    background-image: url('../images/background1.jpg');
+    text-align: center;
+    color: white;
+    background-size: cover;
+}
+
+.how-it-works-section h5 {
+    padding-bottom: 10px;
+    color: blueviolet;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.how-it-works-section h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.how-it-works-section p {
+    padding-bottom: 30px;
+    color: white;
+}
+
+.how-it-works-section img {
+    position: relative;
+    bottom: -30px;
+}
+
+.customer-section {
+    margin-top: 175px;
+    margin-bottom: 100px;
+}
+
+.customer-section h2 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.customer-section .customer-line-img {
+    position: relative;
+}
+
+.customer-section img {
+    height: 10px;
+    width: 1000px;
+    position: absolute;
+    top: 22px;
+}
+
+.customer-section .width-20 {
+    width: 20%;
+}
+
+.customer-section h3 {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.customer-section p {
+    color: rgb(196, 189, 189);
+    text-shadow: 2px 2px black;
+}
+
+.customer-section .customer1 {
+    background-image: url('../images/customer1.jpg');
+    height: 370px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+.customer-section .customer-inner {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 25px;
+    position: relative;
+}
+
+.customer-section .customer-inner .customer-content {
+    position: absolute;
+    bottom: 5px;
+}
+
+.customer-section .customer-inner .customer-content::before {
+    content: "";
+    width: 3px;
+    height: 55px;
+    background-color: white;
+    position: absolute;
+    left: -15px;
+    top: 5px;
+}
+
+.customer-section .customer2 {
+    background-image: url('../images/customer2.jpg');
+    height: 370px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    background-size: cover;
+    background-position: center;
+}
+
+.customer-section .customer3 {
+    background-image: url('../images/customer3.jpg');
+    height: 370px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    background-size: cover;
+    background-position: center;
+}
+
+.customer-section .customer4 {
+    background-image: url('../images/customer4.jpg');
+    height: 370px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us-section {
+    background-image: url('../images/aboutus.jpg');
+    padding-bottom: 80px;
+    padding-top: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us-section h5 {
+    color: white;
+    padding-top: 40px;
+    text-transform: uppercase;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.692);
+    padding-bottom: 10px;
+}
+
+.about-us-section h5::before {
+    content: "";
+    display: inline-block;
+    background-color: rgb(53, 53, 122);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -3px;
+}
+
+.about-us-section h2 {
+    color: white;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 44px;
+}
+
+.about-us-section p {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-us-section .p1 {
+    color: white;
+}
+
+span {
+    content: "\2713";
+    color: white;
+    display: inline-block;
+}
+
+.training-seminar-section {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.training-seminar-section h4 {
+    color: blueviolet;
+    padding-top: 50px;
+}
+
+.training-seminar-section .h22 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 16px;
+}
+
+.training-seminar-section .p22 {
+    padding-bottom: 30px;
+}
+
+.training-seminar-section .training-inner {
+    background-image: url('../images/training2.jpg');
+    height: 550px;
+}
+
+.training-seminar-section .training-inner .training-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 50px;
+    color: white;
+}
+
+.training-seminar-section .training-inner .training-content h4 {
+    color: blueviolet;
+    padding-top: 70px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.training-seminar-section .training-inner .training-content p {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.training-seminar-section .training-inner .training-content h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 60px;
+}
+
+.training-seminar-section .training-inner .training-content .p2 {
+    padding-top: 5px;
+}
+
+.training-seminar-section .training-inner .training-content .conference-date {
+    background-color: blueviolet;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    clip-path: polygon(100% 0, 100% 83%, 93% 100%, 0 100%, 0 0);
+}
+
+.training-seminar-section .training-inner .training-content .countdown {
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 42px;
+    border: 1px solid white;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.training-seminar-section .training-inner .training-content .learn-more-btn {
+    background-color: rgb(89, 0, 255);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    clip-path: polygon(100% 0, 100% 83%, 93% 100%, 0 100%, 0 0);
+}
+
+.training-seminar-section .training-inner .training-content .learn-more-btn:hover {
+    background-color: transparent;
+    color: rgb(89, 0, 255);
+}
+
+.form-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url('../images/form.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.form-section br {
+    display: none;
+}
+
+.form-section form {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.692);
+    padding: 50px;
+}
+
+.form-section form textarea,
+.form-section form input,
+.form-section form button {
+    width: 100%;
+    border: 0;
+    outline: none;
+    margin-bottom: 15px;
+    height: 40px;
+}
+
+.form-section form textarea {
+    height: 80px;
+}
+
+.form-section .button {
+    position: relative;
+}
+
+.form-section form button {
+    background-color: blueviolet;
+    clip-path: polygon(100% 0, 100% 83%, 93% 100%, 0 100%, 0 0);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 310px;
+}
+
+.form-section form label {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.692);
+    padding-bottom: 5px;
+}
+
+.form-section .h22 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-section .p22 {
+    text-align: center;
+    color: white;
+}
+
+.form-section .content-container {
+    margin-top: 50px;
+}
+
+.form-section .contact-details p a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-section .contact-details p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-section .contact-details .p2222 {
+    padding-top: 5px;
+}
+
+.form-section .contact-details .h44 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.692);
+    padding-bottom: 10px;
+}
+
+.form-section .contact-details .h44::before {
+    content: "";
+    display: inline-block;
+    background-color: rgb(53, 53, 122);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -3px;
+}
+
+.form-section .contact-details .h444 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.692);
+    padding-bottom: 10px;
+}
+
+.form-section .contact-details .h444::before {
+    content: "";
+    display: inline-block;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -3px;
+}
+
+.form-section .contact-details h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.form-section .contact-details .p222 {
+    padding-bottom: 16px;
+}
+
+.pricing-plans-section {
+    text-align: center;
+}
+
+.pricing-plans-section .pricing-plan:hover {
+    background: linear-gradient(0.25turn, #17023d, #5a0892, #2058a7);
+    cursor: pointer;
+    -webkit-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.75);
+    transform: scale(1.075);
+}
+
+.pricing-plans-section h5 {
+    padding-bottom: 10px;
+    color: blueviolet;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.pricing-plans-section h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pricing-plans-section p {
+    padding-bottom: 10px;
+    color: rgb(155, 150, 150);
+}
+
+.pricing-plans-section .pricing-plan h4 {
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.pricing-plans-section .pricing-plan img {
+    height: 100px;
+    width: 100px;
+}
+
+.pricing-plans-section .price span {
+    color: white;
+}
+
+.pricing-plans-section .pricing-plan {
+    background-color: rgba(42, 43, 44);
+    color: white;
+    padding: 25px;
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+.pricing-plans-section .pricing-plan .dis-btn1 {
+    background-color: rgb(89, 0, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 58px;
+    padding-left: 58px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    clip-path: polygon(100% 0, 100% 83%, 93% 100%, 0 100%, 0 0);
+    margin-top: 20px;
+}
+
+.dis-btn1:hover {
+    background-color: transparent;
+    color: rgb(89, 0, 255);
+}
+
+.pricing-plans-section .pricing-plan a {
+    display: inline-block;
+}
+
+.pricing-plans-section .pricing-plan ul {
+    list-style: none;
+    margin-right: 22px;
+}
+
+.pricing-plans-section .pricing-plan ul li {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted rgba(126, 121, 121, 0.692);
+    float: left;
+}
+
+.pricing-plans-section .pricing-plan .price {
+    position: relative;
+    border-top: 3px dotted white;
+    border-bottom: 3px dotted white;
+    margin-bottom: 28px;
+}
+
+.pricing-plans-section .pricing-plan .price .main-number {
+    font-size: 60px;
+    font-style: italic;
+}
+
+.pricing-plans-section .pricing-plan .price .sec-number {
+    position: relative;
+    top: -30px;
+}
+
+.pricing-plans-section .pricing-plan .price .month {
+    position: relative;
+    left: -25px;
+}
+
+.focus-section {
+    background-image: url('../images/background2.jpg');
+    background-size: cover;
+    margin-top: 100px;
+    height: 500px;
+}
+
+.focus-section .content-section {
+    text-align: center;
+    padding-top: 120px;
+    background-size: cover;
+}
+
+.focus-section .content-section h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.focus-section .content-section h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-transform: capitalize;
+    padding-bottom: 70px;
+}
+
+.focus-section .content-section .book-trial-btn {
+    background-color: transparent;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: 1px solid white;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.focus-section .content-section .book-trial-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer h4 {
+    border-bottom: 1px dotted gray;
+    text-transform: uppercase;
+}
+
+footer h4::before {
+    content: "";
+    display: inline-block;
+    background-color: rgb(53, 53, 122);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -3px;
+}
+
+footer ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+footer ul li {
+    padding-top: 5px;
+}
+
+footer ul li a {
+    color: gray;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer ul li a::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    background-image: url('../images/lines1.jpg');
+    width: 15px;
+    height: 11px;
+}
+
+footer a i {
+    font-size: 28px;
+}
+
+footer .icons a {
+    margin-right: 5px;
+    color: gray;
+}
+
+footer .icons .icons2 {
+    padding-top: 20px;
+}
+
+footer .icons .icons3 {
+    padding-top: 10px;
+}
+
+.after-footer {
+    background-color: black;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.after-footer .afterfootermobileversion {
+    display: none;
+}
+
+.after-footer .section2 {
+    margin-left: 260px;
+}
+
+.after-footer ul {
+    list-style: none;
+    margin: 0;
+}
+
+.after-footer ul li {
+    display: inline-block;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.after-footer ul li a {
+    color: white;
+}
+
+.after-footer ul li a::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    background-image: url('../images/lines2.jpg');
+    width: 15px;
+    height: 11px;
+}
+
+/* Media Queris - Resposnive */
+
+@media screen and (max-width: 1440px) {
+
+    .pre-header li a {
+        font-size: 12px;
+    }
+
+    .header li a {
+        font-size: 12px;
+    }
+
+    .customer-section img {
+        height: 10px;
+        width: 860px;
+        position: absolute;
+        top: 22px;
+    }
+
+    .customer-section h2 {
+        font-size: 26px;
+    }
+
+    .form-section form button {
+        width: 260px;
+    }
+
+    .how-it-works-section img {
+        width: 800px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .col-md-2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .row .col-md-7 {
+        display: none;
+        margin-top: 25px;
+    }
+
+    .row .col-md-5 {
+        display: none;
+    }
+
+    .col-md-9 {
+        display: none;
+    }
+
+    .col-md-3 {
+
+        margin-top: 50px;
+    }
+
+    .box {
+        margin-top: 50px;
+    }
+
+    .how-it-works-section img {
+        width: 75%;
+    }
+
+    .customer-section {
+        display: block;
+        text-align: center;
+    }
+
+    .form-section .col-md-7 {
+        text-align: center;
+        display: block;
+    }
+
+    .form-section .col-md-5 {
+        display: block;
+        text-align: center;
+    }
+
+
+    .training-inner {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-section form button {
+        position: relative;
+    }
+
+    .training-seminar-section .training-inner {
+        height: auto;
+    }
+
+
+    .col-md-4 .afterfootermobileversion {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .col-md-8 ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .col-md-8 {
+        padding: 0;
+        margin: 0;
+    }
+    .col-md-8 .section2 {
+        padding: 0;
+        margin: 0;
+    }
+
+}
