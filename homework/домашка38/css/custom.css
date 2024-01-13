@@ -369,6 +369,12 @@ footer .icons a {
 
   footer .icons {
     padding: 0;
-    
+    margin: 0;
+  }
+
+
+  .row .col-md-3 {
+    padding: 5px;
+    margin: 5px;
   }
 }
