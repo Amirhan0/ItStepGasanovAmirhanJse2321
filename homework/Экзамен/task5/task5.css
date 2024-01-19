@@ -1,0 +1,25 @@
+div span {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    
+
+    animation-name: boxcircle;
+    animation-duration: 7s;
+    animation-iteration-count:infinite
+}
+
+
+@keyframes boxcircle {
+    0% {
+        margin-right: 100%;
+    }
+    50% {
+        margin-left: 90%;
+    }
+    100% {
+        margin-right: 100%;
+    }
+}

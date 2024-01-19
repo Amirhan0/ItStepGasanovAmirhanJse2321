@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Raleway&family=Roboto:ital,wght@1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #FFF;
+    box-shadow: 0px 1px 8px 0px rgba(83, 109, 122, 0.29);
+    height: 85px;
+    padding: 0 145px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    align-items: center;
+}
+
+header img {
+    margin-right: 30px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #1D2F38;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: -20px;
+}
+
+.sign__up {
+    display: grid;
+    grid-template-columns: 50px 100px;
+    align-items: center;
+    justify-content: end;
+}
+
+.sign__up a {
+    color: #1D2F38;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    text-decoration: none;
+}
+
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 555px);
+    margin-left: 145px;
+    gap: 40px;
+}
+
+.left__grid {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.left__grid text {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.right__grid {
+    display: grid;
+    grid-template-columns: 245px 300px;
+    gap: 20px;
+}
+
+.right__grid span {
+    color: #1D2F38;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 15px;
+    align-self: center;
+}
+
+.text-main {
+    color: #1D2F38;
+    font-family: Bitter;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 77px 0 33px 145px;
+
+}
+
+.text h2 {
+    margin-top: 5px;
+    color: #1D2F38;
+font-family: Bitter;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 35px; /* 116.667% */
+}
+
+.text p {
+    margin-top: 5px;
+    color: #1D2F38;
+font-family: Raleway;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+}
