@@ -113,3 +113,30 @@
 //     }
 //     console.log('\n');
 //     }
+
+
+
+
+
+console.log("Загадайте число от 0 до 100.");
+
+let low = 0;
+let high = 100;
+
+while (true) {
+    let mid = Math.floor((low + high) / 2);
+    let userInput = prompt(`Ваше число больше ${ mid }, меньше ${ mid } или равно ${ mid } ? (Введите >, <или =)`);
+
+    if (userInput
+         === '>') {
+        low = mid + 1;
+    } else if (userInput === '<') {
+        high = mid - 1;
+    } else if (
+        userInput === '=') {
+        console.log(`Ваше число - ${ mid }!`);
+        break;
+    } else {
+        console.log("Пожалуйста, введите >, < или =.");
+    }
+}
