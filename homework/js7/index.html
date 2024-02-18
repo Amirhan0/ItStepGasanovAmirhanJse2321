@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js.js" defer></script>
+    <title>Поиск</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #search-form {
+            margin-top: 20px;
+        }
+
+        #search-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        #search-results {
+            list-style: none;
+            padding: 0;
+        }
+
+        #search-results li {
+            margin: 5px 0;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        span {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Поиск</h1>
+    <form id="search-form">
+        <input type="text" id="search" placeholder="Введите запрос...">
+    </form>
+    <ul id="search-results">
+        <li>Яблоко</li>
+        <li>Банан</li>
+        <li>Виноград</li>
+        <li>Барбарис</li>
+        <li>Слово</li>
+    </ul>
+</body>
+
+</html>
