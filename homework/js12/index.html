@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Валидация</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Валидация</h1>
+
+      <form action="" class="form" id="add-form">
+        <div class="input-box-one">
+          <input
+            data-required="true"
+            type="text"
+            class="input-field-name"
+            placeholder="Имя"
+          />
+          <p class="error-label"></p>
+        </div>
+        <div class="input-box-two">
+          <input
+            data-max-length="6"
+            type="text"
+            class="input-field-second-name"
+            placeholder="Фамилия"
+          />
+          <p class="error-label"></p>
+        </div>
+        <div class="input-box-three">
+          <input
+            data-required="true"
+            data-max-length="6"
+            data-min-length="2"
+            type="text"
+            class="input-field-surname"
+            placeholder="Отчество"
+          />
+          <p class="error-label"></p>
+        </div>
+
+        <button type="submit" class="send-btn">Отправить</button>
+      </form>
+    </div>
+
+    <script src="js/index.js" defer></script>
+  </body>
+</html>
