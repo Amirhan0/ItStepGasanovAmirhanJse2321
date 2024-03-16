@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Snake 2d</title>
+  </head>
+  <body>
+    <div id="game">
+      <div class="game-header">
+        <div class="game-score">
+          <span class="score-count">1234</span>
+        </div>
+      </div>
+      <div class="canvas-wrapper">
+        <canvas id="game-canvas" width="320" height="400"></canvas>
+      </div>
+      <div id="restart-overlay" class="overlay hidden">
+        <div class="overlay-content">
+          <h2>Вы проиграли</h2>
+          <button id="restart-button">Начать заново</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
