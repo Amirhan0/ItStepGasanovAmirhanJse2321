@@ -1,0 +1,94 @@
+.card {
+    width: 500px;
+    height: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-image: linear-gradient(to right bottom, #00ffbc, #00e7e8, #00c9ff, #00a6ff, #477bf0);
+    align-items: center;
+    border-radius: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+input {
+    border-radius: 50px;
+    border: none;
+    width: 360px;
+    margin-right: 25px;
+    outline: none;
+    padding-left: 30px;
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+}
+
+.poisk {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poisk img {
+    width: 30px;
+}
+
+
+
+.deg {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 90px;
+}
+
+.country {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.humi {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 20px;
+
+}
+
+.humi img {
+    width: 70px;
+    height: 60px;
+}
+
+.humi span {
+    font-size: 20px;
+    font-weight: 90;
+}
+
+.cloud {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(images/clear.png);
+    width: 250px;
+    height: 200px;
+    background-repeat: no-repeat;
+}
