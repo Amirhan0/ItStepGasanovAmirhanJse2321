@@ -1,0 +1,38 @@
+/* .calculator {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.display {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+} */
+
+/* .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+} */
+
+.error {
+    border: 1px solid red;
+}
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
