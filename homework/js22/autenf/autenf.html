@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход</title>
+    <link rel="stylesheet" href="autenf.css" />
+    <script src="autenf.js" defer></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Вход</h2>
+      <form>
+        <div class="input-group">
+          <label for="login">Логин:</label>
+          <input class="login" type="text" id="login" name="login" required />
+          <p id="errorMessage" class="error-message"></p>
+        </div>
+        <div class="input-group">
+          <label for="password">Пароль:</label>
+          <input
+            class="password"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <p id="errorMessage" class="error-message"></p>
+        </div>
+        <button type="submit" class="button button-primary">Войти</button>
+      </form>
+    </div>
+  </body>
+</html>

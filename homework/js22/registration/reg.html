@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="reg.css" />
+    <script src="/registration/reg.js" defer></script>
+  </head>
+  <body>
+    <div class="registration-container">
+      <h2>Регистрация</h2>
+      <form action="register.php" method="post">
+        <div class="input-group">
+          <label for="username">Имя пользователя:</label>
+          <input
+            class="nameuser"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+          <p id="errorMessage" class="error-message"></p>
+        </div>
+        <div class="input-group">
+          <label for="email">Электронная почта:</label>
+          <input class="email" type="email" id="email" name="email" required />
+          <p id="errorMessage" class="error-message"></p>
+        </div>
+        <div class="input-group">
+          <label for="login">Логин:</label>
+          <input class="login" type="text" id="login" name="login" required />
+          <p id="errorMessage" class="error-message"></p>
+        </div>
+        <div class="input-group">
+          <label for="password">Пароль:</label>
+          <input
+            class="password"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <p id="errorMessage" class="error-message"></p>
+        </div>
+        <button type="submit" class="button button-primary">
+          Зарегистрироваться
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
