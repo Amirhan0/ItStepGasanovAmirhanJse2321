@@ -59,8 +59,10 @@ async function addEvent(eventid) {
     });
     if (response.ok) {
       console.log("OKEY");
+      alert("Вы успешно зарегистрировались!");
     }
   } catch (error) {
+    alert("Ошибка в регистрации");
     console.log("ERROR");
   }
 }
