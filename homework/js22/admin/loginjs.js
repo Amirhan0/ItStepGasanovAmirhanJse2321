@@ -115,13 +115,13 @@ async function deleteEvent(eventId) {
       }
     );
     if (!response.ok) {
-      throw new Error("Network response was not ok");
+      throw new Error("Данные на сервер не отправляются!");
     }
     const data = await response.json();
     console.log(data);
     renderEvents();
   } catch (error) {
-    console.error("There was a problem with your fetch operation:", error);
+    console.error("Проблема в вашем:", error);
   }
 }
 
@@ -176,13 +176,13 @@ async function updateEvent(eventId, eventData) {
       }
     );
     if (!response.ok) {
-      throw new Error("Network response was not ok");
+      throw new Error("Данные на сервер не отправляются");
     }
     const data = await response.json();
     console.log(data);
     renderEvents(); //
   } catch (error) {
-    console.error("There was a problem with your fetch operation:", error);
+    console.error("Проблема в вашем:", error);
   }
 }
 
@@ -197,7 +197,7 @@ function openEditModal(eventId) {
       modalEdit.style.display = "block";
     })
     .catch((error) => {
-      console.error("Error fetching event data:", error);
+      console.error("Проблема в вашем fetche:", error);
     });
 }
 
@@ -257,7 +257,6 @@ document.addEventListener("click", async (e) => {
         throw new Error("Ошибка удаления персоны");
       }
       alert("Персона успешно удалена!");
-      // Обновляем список персон
       renderPeople();
     } catch (error) {
       console.error("Произошла ошибка при удалении персоны:", error.message);

@@ -77,7 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
           passwordUser.value.trim(),
           loginUser.value.trim()
         );
-        window.location.href = "../autenf/autenf.html";
+        window.location.href =
+          "https://amirhan0.github.io/ItStepGasanovAmirhanJse2321/homework/js22/autenf/autenf.html";
       } else {
         console.error("Ошибка при отправке данных на сервер:", response.status);
       }
@@ -91,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
     localStorage.setItem("login", login);
-    localStorage.setItem("loggedIn", true); 
+    localStorage.setItem("loggedIn", true);
   }
 
   function showError(input, message) {

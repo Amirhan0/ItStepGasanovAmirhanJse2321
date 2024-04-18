@@ -14,7 +14,7 @@ button.addEventListener("submit", async (e) => {
 
     if (login === "admin" && password === "admin12345") {
       addLocalStorage(login, password);
-      window.location.href = "../admin/loginadmin.html";
+      window.location.href = "https://amirhan0.github.io/ItStepGasanovAmirhanJse2321/homework/js22/admin/loginadmin.html";
       return;
     }
 
@@ -28,7 +28,7 @@ button.addEventListener("submit", async (e) => {
     });
 
     if (userAuthenticated) {
-      window.location.href = "../main/events.html";
+      window.location.href = "https://amirhan0.github.io/ItStepGasanovAmirhanJse2321/homework/js22/main/events.html";
     } else {
       showError("Неверный логин или пароль");
     }
