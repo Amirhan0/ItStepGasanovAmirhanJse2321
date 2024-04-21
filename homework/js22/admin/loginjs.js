@@ -168,7 +168,7 @@ async function updateEvent(eventId, eventData) {
     const response = await fetch(
       `https://aaca53d3bfb3d1d9.mokky.dev/events/${eventId}`,
       {
-        method: "PUT",
+        method: "PATCH",
         headers: {
           "Content-Type": "application/json",
         },
@@ -180,7 +180,7 @@ async function updateEvent(eventId, eventData) {
     }
     const data = await response.json();
     console.log(data);
-    renderEvents(); //
+    renderEvents(); 
   } catch (error) {
     console.error("Проблема в вашем:", error);
   }
