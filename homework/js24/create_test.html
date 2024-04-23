@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестирование знаний</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <span class="buffer"></span>
+      <h1 class="mb-4">Создание теста</h1>
+      <form id="testForm">
+        <button type="submit" class="btn btn-success" id="create_option">
+          Создать вопрос
+        </button>
+        <br />
+        <button type="submit" class="btn btn-success mt-5 create_test">
+          Создать тест
+        </button>
+      </form>
+
+      <button type="button" class="test-button btn btn-success mt-5 create_test">Перейти к тестам</button>
+    </div>
+
+    <!-- Подключение Bootstrap JS (необходимо для работы компонентов Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="create_test.js" defer></script>
+  </body>
+</html>
