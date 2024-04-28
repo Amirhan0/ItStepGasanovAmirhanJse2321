@@ -66,17 +66,17 @@
   background-color: #3498db;
   color: #ffffff;
   border-color: #3498db;
-  pointer-events: none; /* Запрещаем повторное нажатие после ответа */
+  pointer-events: none;
 }
 
-/* Стили для контейнера результата */
+
 .result-container {
   background-color: #f1f1f1;
   border: 1px solid #ccc;
   padding: 10px;
-  margin: 20px auto; /* Центрирование по горизонтали */
-  max-width: 300px; /* Максимальная ширина панели */
-  text-align: center; /* Выравнивание по центру */
+  margin: 20px auto;
+  max-width: 300px;
+  text-align: center;
 }
 
 .result p {
@@ -84,14 +84,15 @@
   font-weight: bold;
   color: #333333;
 }
+
 .answer-button.answered {
-  background-color: #2ecc71; /* Новый цвет фона после нажатия */
-  color: #ffffff; /* Новый цвет текста после нажатия */
-  border-color: #2ecc71; /* Новый цвет границы после нажатия */
+  background-color: #2ecc71;
+  color: #ffffff;
+  border-color: #2ecc71;
 }
 
 .answer-button:active {
-  background-color: #2ecc71; /* Новый цвет фона при нажатии */
-  color: #ffffff; /* Новый цвет текста при нажатии */
-  border-color: #2ecc71; /* Новый цвет границы при нажатии */
+  background-color: #2ecc71;
+  color: #ffffff;
+  border-color: #2ecc71;
 }

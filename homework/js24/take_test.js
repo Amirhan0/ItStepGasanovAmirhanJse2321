@@ -75,31 +75,23 @@ if (savedTests) {
 
   document.querySelector(".container").innerHTML = html;
 
-  // Добавляем обработчик клика на кнопки ответов
   const answerButtons = document.querySelectorAll(".answer-button");
   answerButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const questionIndex = button.getAttribute("data-question-index");
       const isCorrect = button.getAttribute("data-correct") === "true";
 
-      // Отключаем кнопку после нажатия
       button.disabled = true;
 
-      // Добавляем класс, чтобы отобразить, что кнопка была нажата
-      button.classList.add("answered");
-
-      // Увеличиваем счетчик правильных ответов, если ответ правильный
       if (isCorrect) {
         correctAnswersCount++;
       }
 
-      // Проверяем, все ли вопросы были отвечены
       const totalQuestions = savedTests.length;
       const answeredQuestions = document.querySelectorAll(
         ".answer-button.answered"
       ).length;
       if (answeredQuestions === totalQuestions) {
-        // Выводим результат
         const resultHTML = `
           <div class="result">
             <p>Правильных ответов: ${correctAnswersCount} из ${totalQuestions}</p>
@@ -115,6 +107,6 @@ if (savedTests) {
 }
 document.querySelectorAll(".answer-button").forEach((button) => {
   button.addEventListener("click", () => {
-    button.classList.add("answered"); // Добавляем класс answered к кнопке после нажатия
+    button.classList.add("answered");
   });
 });

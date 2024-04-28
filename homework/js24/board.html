@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard Example</title>
+  </head>
+  <body>
+    <h1>Leaderboard</h1>
+    <ul id="leaderboard"></ul>
+
+    <script>
+      let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
+
+      function updateLeaderboard(playerName, score) {
+        leaderboard.push({ name: playerName, score: score });
+
+        leaderboard.sort((a, b) => b.score - a.score);
+        leaderboard = leaderboard.slice(0, 10);
+
+        localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
+      }
+
+      function displayLeaderboard() {
+        const leaderboardElement = document.getElementById("leaderboard");
+        leaderboardElement.innerHTML = "";
+
+        leaderboard.forEach((entry, index) => {
+          const listItem = document.createElement("li");
+          listItem.textContent = `${index + 1}. ${entry.name} - ${entry.score}`;
+          leaderboardElement.appendChild(listItem);
+        });
+      }
+
+      updateLeaderboard("Player1", 100);
+      updateLeaderboard("Player2", 120);
+      updateLeaderboard("Player3", 90);
+
+      displayLeaderboard();
+    </script>
+  </body>
+</html>
