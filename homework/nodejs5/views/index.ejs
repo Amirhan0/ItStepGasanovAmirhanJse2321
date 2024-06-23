@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .quiz-container {
+        margin-top: 50px;
+      }
+
+      .question {
+        margin-bottom: 20px;
+      }
+
+      .options {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .options li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container quiz-container">
+      <div class="card">
+        <div class="card-header">
+          <h2>Quiz Title</h2>
+        </div>
+        <div class="card-body">
+          <form id="quiz-form" action="/submit-quiz" method="POST">
+            <% if (questions.length > 0) { %>
+            <ul>
+              <% questions.forEach((question, index) => { %>
+              <li class="question">
+                <h5><%= index + 1 %>. <%= question.question %></h5>
+                <ul class="options">
+                  <% question.answers.forEach((answer, ansIndex) => { %>
+                  <li>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="question<%= index + 1 %>"
+                        id="option<%= ansIndex %>"
+                        value="<%= answer %>"
+                        required
+                      />
+                      <label
+                        class="form-check-label"
+                        for="option<%= ansIndex %>"
+                      >
+                        <%= answer %>
+                      </label>
+                    </div>
+                  </li>
+                  <% }); %>
+                </ul>
+              </li>
+              <% }); %>
+            </ul>
+            <% } else { %>
+            <p>No questions found.</p>
+            <% } %>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
